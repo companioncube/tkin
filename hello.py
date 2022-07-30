@@ -2,10 +2,10 @@ from tkinter import *
 
 root = Tk()
 
-e=Entry(root, width=50)
-
+e=Entry(root, width=50, bg="blue", borderwidth=5)
+e.insert(0, "Enter your name: ")
 def myClick():
-    myLabel1 = Label(root, text="EHHH")
+    myLabel1 = Label(root, text=e.get())
     myLabel1.grid(row=0, column=0)
 
 myLabel2 = Label(root, text="Bye World!")
